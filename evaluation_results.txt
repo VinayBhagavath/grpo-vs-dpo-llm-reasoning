@@ -1,0 +1,1114 @@
+======================================================================
+Model Comparison: Baseline vs GRPO vs DPO
+Date: 2026-01-02 16:38:26
+======================================================================
+
+SUMMARY
+----------------------------------------------------------------------
+Metric                    Baseline       GRPO           DPO           
+----------------------------------------------------------------------
+Accuracy                    16.7%          13.3%          30.0%       
+Avg Steps                   2.77           3.60           0.03        
+Correct / Total           5/30           4/30           9/30          
+----------------------------------------------------------------------
+
+======================================================================
+DETAILED RESPONSES
+======================================================================
+
+
+--- Baseline ---
+
+Example 1:
+  Question: Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for ...
+  Expected: 18.0
+  Predicted: 23.0
+  Correct: False
+  Steps: 13
+  Response: To determine how much Janet makes at the farmers' market each day, we need to follow these steps:
+
+1. Calculate the total number of eggs laid by the ducks in one day.
+2. Subtract the number of eggs ea...
+
+Example 2:
+  Question: A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it ...
+  Expected: 3.0
+  Predicted: 3.0
+  Correct: True
+  Steps: 3
+  Response: To determine the total number of bolts needed for the robe, we need to calculate the amount of each type of fiber required and then sum them up.
+
+1. **Blue Fiber:**
+   - The robe requires 2 bolts of b...
+
+Example 3:
+  Question: Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repai...
+  Expected: 70000.0
+  Predicted: 30000.0
+  Correct: False
+  Steps: 4
+  Response: To determine Josh's profit from flipping his house, we need to follow these steps:
+
+1. **Calculate the total cost of the house:**
+   - The house costs $80,000.
+   - Josh also spends an additional $50,...
+
+Example 4:
+  Question: James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meter...
+  Expected: 540.0
+  Predicted: 180.0
+  Correct: False
+  Steps: 4
+  Response: To determine how many total meters James runs in a week, we need to follow these steps:
+
+1. Calculate the distance James runs in one sprint.
+2. Multiply that distance by the number of sprints he runs ...
+
+Example 5:
+  Question: Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, meal...
+  Expected: 20.0
+  Predicted: 5.0
+  Correct: False
+  Steps: 5
+  Response: To determine how many cups of feed Wendi needs for the final meal of the day, we can follow these steps:
+
+1. **Calculate total daily feed requirement:**
+   - Each chicken gets 3 cups of feed per day.
+...
+
+Example 6:
+  Question: Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second g...
+  Expected: 64.0
+  Predicted: 16.0
+  Correct: False
+  Steps: 2
+  Response: To determine how much Kylar needs to pay for 16 glasses, we first need to calculate the cost of one specific glass and then multiply that by 16.
+
+1. **Calculate the cost of one glass:**
+   - The regul...
+
+Example 7:
+  Question: Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How...
+  Expected: 260.0
+  Predicted: 260.0
+  Correct: True
+  Steps: 0
+  Response: Let's break this down step-by-step:
+
+1) We know that Seattle has 20 sheep.
+
+2) Since Charleston has 4 times as many sheep as Seattle, we can calculate the number of sheep in Charleston:
+   \( \text{Sh...
+
+Example 8:
+  Question: Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way throug...
+  Expected: 160.0
+  Predicted: 200.0
+  Correct: False
+  Steps: 4
+  Response: To determine how long it takes for Carla to complete the download, we need to break down the problem into manageable parts and calculate each part separately.
+
+1. **Calculate the time taken during the...
+
+Example 9:
+  Question: John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot som...
+  Expected: 45.0
+  Predicted: 0.5
+  Correct: False
+  Steps: 4
+  Response: To determine how far John is from his home at the end of the 4-hour journey, we need to break down the problem into smaller parts and calculate each segment separately.
+
+1. **First Segment:**
+   - Dis...
+
+Example 10:
+  Question: Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overti...
+  Expected: 460.0
+  Predicted: 700.0
+  Correct: False
+  Steps: 2
+  Response: To calculate Eliza's earnings for the week, we need to consider both her regular and overtime pay.
+
+First, let's determine her regular pay:
+- Regular hourly rate: $10/hour
+- Hours worked in the first ...
+
+Example 11:
+  Question: A new program had 60 downloads in the first month. The number of downloads in the second month was t...
+  Expected: 366.0
+  Predicted: 394.0
+  Correct: False
+  Steps: 1
+  Response: Let's break down the problem step-by-step:
+
+1) In the first month, there were 60 downloads.
+
+2) In the second month, the number of downloads was three times that of the first month:
+   Downloads in th...
+
+Example 12:
+  Question: Toula went to the bakery and bought various types of pastries. She bought 3 dozen donuts which cost ...
+  Expected: 694.0
+  Predicted: 694.0
+  Correct: True
+  Steps: 3
+  Response: To find the total cost, we need to calculate the cost of each type of pastry separately and then sum them up.
+
+1. Donuts:
+   - Toula bought 3 dozen donuts at $68 per dozen.
+   - Total cost for donuts ...
+
+Example 13:
+  Question: Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, w...
+  Expected: 13.0
+  Predicted: 3.0
+  Correct: False
+  Steps: 1
+  Response: To determine how many years it will take for Carlos to start earning money from his lemon tree, we need to calculate the net profit per year and see when this becomes positive.
+
+First, let's define th...
+
+Example 14:
+  Question: Melanie is a door-to-door saleswoman. She sold a third of her vacuum cleaners at the green house, 2 ...
+  Expected: 18.0
+  Predicted: 2.0
+  Correct: False
+  Steps: 5
+  Response: Let's denote the total number of vacuum cleaners Melanie started with as \( x \).
+
+1. Melanie sold a third of her vacuum cleaners at the green house:
+   \[
+   \frac{x}{3}
+   \]
+
+2. She sold 2 more vac...
+
+Example 15:
+  Question: In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the remaining enrolled i...
+  Expected: 60.0
+  Predicted: 27.5
+  Correct: False
+  Steps: 1
+  Response: Let's break this down step-by-step:
+
+1) First, we need to find out how many students are enrolled in each type of dance.
+
+Contemporary Dance: 20%
+Jazz Dance: 25% of the remaining (which is 80% of the ...
+
+Example 16:
+  Question: A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or elec...
+  Expected: 125.0
+  Predicted: 8000.0
+  Correct: False
+  Steps: 1
+  Response: To determine the maximum profit for the merchant, we need to calculate the expected value of each plan and then compare them.
+
+### Step 1: Calculate the Expected Value of Jewelry
+
+The merchant has two...
+
+Example 17:
+  Question: Two trains leave San Rafael at the same time. They begin traveling westward, both traveling for 80 m...
+  Expected: 230.0
+  Predicted: 80.0
+  Correct: False
+  Steps: 2
+  Response: To solve this problem, we need to determine the distance each train traveled over the two days and then find the total distance covered.
+
+First, let's calculate the distance each train traveled on the...
+
+Example 18:
+  Question: Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a yea...
+  Expected: 57500.0
+  Predicted: 1150.0
+  Correct: False
+  Steps: 2
+  Response: To calculate Jill's annual salary, we need to consider both her hourly wage for teaching and her weekly pay rate for being a cheerleading coach.
+
+First, let's calculate her total earnings from teachin...
+
+Example 19:
+  Question: Claire makes a 3 egg omelet every morning for breakfast.  How many dozens of eggs will she eat in 4 ...
+  Expected: 7.0
+  Predicted: 12.0
+  Correct: False
+  Steps: 4
+  Response: To determine how many dozens of eggs Claire will eat in 4 weeks, we need to follow these steps:
+
+1. **Calculate the number of days in 4 weeks:**
+   - There are 7 days in a week.
+   - Therefore, in 4 w...
+
+Example 20:
+  Question: Marissa is hiking a 12-mile trail. She took 1 hour to walk the first 4 miles, then another hour to w...
+  Expected: 6.0
+  Predicted: 3.0
+  Correct: False
+  Steps: 3
+  Response: To determine Marissa's required walking speed for the remaining distance of the trail, we can follow these steps:
+
+1. **Calculate the total time taken:**
+   - Time taken to walk the first 4 miles: \( ...
+
+Example 21:
+  Question: I have 10 liters of orange drink that are two-thirds water and I wish to add it to 15 liters of pine...
+  Expected: 15.0
+  Predicted: 1.0
+  Correct: False
+  Steps: 1
+  Response: Let's solve this problem step-by-step:
+
+1) First, we need to calculate how much water is in each type of drink:
+   - Orange drink: Two-thirds of its volume = (2/3) * 10 liters = 20/3 liters ≈ 6.67 lit...
+
+Example 22:
+  Question: Raymond and Samantha are cousins. Raymond was born 6 years before Samantha. Raymond had a son at the...
+  Expected: 14.0
+  Predicted: 25.0
+  Correct: False
+  Steps: 0
+  Response: Let's break this down step-by-step:
+
+1) We know that Raymond was born 6 years before Samantha.
+
+2) Samantha is currently 31 years old.
+
+3) Therefore, Raymond must have been born 31 - 6 = 25 years ago....
+
+Example 23:
+  Question: Billy sells DVDs. He has 8 customers on Tuesday. His first 3 customers buy one DVD each.  His next 2...
+  Expected: 7.0
+  Predicted: 15.0
+  Correct: False
+  Steps: 2
+  Response: To determine how many DVDs Billy sold on Tuesday, we need to calculate the total number of DVDs given out and add it to the initial number of DVDs he had.
+
+First, let's identify the number of DVDs eac...
+
+Example 24:
+  Question: A candle melts by 2 centimeters every hour that it burns. How many centimeters shorter will a candle...
+  Expected: 8.0
+  Predicted: 6.0
+  Correct: False
+  Steps: 3
+  Response: To determine how much shorter a candle will be after burning from 1:00 PM to 5:00 PM, we need to calculate the total melting distance of the candle over this period and compare it to its original leng...
+
+Example 25:
+  Question: Kyle bought last year's best-selling book for $19.50. This is with a 25% discount from the original ...
+  Expected: 26.0
+  Predicted: 26.0
+  Correct: True
+  Steps: 0
+  Response: To find the original price of the book before the discount, we need to work backwards from the current price after the discount.
+
+Let's denote the original price as \( P \).
+
+The book received a 25% d...
+
+Example 26:
+  Question: Marie ordered one chicken meal that costs $12, 5 packs of milk that costs $3 each, 4 apples that cos...
+  Expected: 2.0
+  Predicted: 2.0
+  Correct: True
+  Steps: 3
+  Response: Let's break down the costs step by step:
+
+1. Chicken meal: $12
+
+2. Packed milk: 5 packs * $3/pack = $15
+
+3. Apples: 4 apples * $1.50/apple = $6
+
+Now let's add up these costs:
+$12 (chicken) + $15 (milk...
+
+Example 27:
+  Question: Mishka bought 3 pairs of shorts, 3 pairs of pants, and 3 pairs of shoes. One pair of shorts costs $1...
+  Expected: 243.0
+  Predicted: 67.0
+  Correct: False
+  Steps: 3
+  Response: To find out how much Mishka spent in total on all the clothing items, we need to add up the cost of each type of clothing item she purchased.
+
+First, let's calculate the cost of the shorts:
+- Mishka b...
+
+Example 28:
+  Question: Cynthia eats one serving of ice cream every night.  She buys cartons of ice cream with 15 servings o...
+  Expected: 16.0
+  Predicted: 240.0
+  Correct: False
+  Steps: 4
+  Response: To determine how much Cynthia will spend on ice cream over 60 days, we need to follow these steps:
+
+1. Calculate the total number of servings of ice cream Cynthia consumes in 60 days.
+2. Determine the...
+
+Example 29:
+  Question: Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His second stop ...
+  Expected: 25.0
+  Predicted: 40.0
+  Correct: False
+  Steps: 3
+  Response: To determine how many miles Henry traveled between his first and second stops, we need to follow these steps:
+
+1. Identify the total distance of the trip: 60 miles.
+2. Determine the distance of the fi...
+
+Example 30:
+  Question: Gloria is shoe shopping when she comes across a pair of boots that fit her shoe budget. However, she...
+  Expected: 104.0
+  Predicted: 0.0
+  Correct: False
+  Steps: 0
+  Response: Let's denote the price of the boots as \( B \) dollars.
+
+According to the problem, the total cost of the boots and the high heels combined is $5 less than the boots themselves. This can be expressed w...
+
+
+--- GRPO ---
+
+Example 1:
+  Question: Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for ...
+  Expected: 18.0
+  Predicted: 18.0
+  Correct: True
+  Steps: 3
+  Response: Step 1: Identify the information
+
+- Number of eggs laid per day: 16
+- Number of eggs eaten per day: 3 + 4 = 7
+- Price per egg: $2
+
+Step 2: Calculate the total number of eggs sold
+
+Total number of eggs...
+
+Example 2:
+  Question: A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it ...
+  Expected: 3.0
+  Predicted: 2.0
+  Correct: False
+  Steps: 5
+  Response: Step 1: Identify the information
+
+- There is one type of fabric (robe)
+- There are two types of fibers: blue and white
+- The amount of each type of fiber depends on the number of bolts
+- We need to fi...
+
+Example 3:
+  Question: Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repai...
+  Expected: 70000.0
+  Predicted: 40000.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the initial cost and total increase
+
+- Initial cost of the house: $80,000
+- Total increase in value: 150% of $80,000 = 1.5 * $80,000 = $120,000
+
+Step 2: Calculate the total increase i...
+
+Example 4:
+  Question: James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meter...
+  Expected: 540.0
+  Predicted: 180.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the information
+
+- Number of sprints per week: 3
+- Distance per sprint: 60 meters
+- Number of weeks in a month (approximately 4 weeks)
+
+Step 2: Calculate the total distance
+
+Total dis...
+
+Example 5:
+  Question: Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, meal...
+  Expected: 20.0
+  Predicted: 40.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the total amount needed
+
+Wendi needs to provide enough mixed feed for all her chickens.
+
+- There are 3 types of feed (seeds, mealworms, and vegetables)
+- There are 20 chickens
+- Each ...
+
+Example 6:
+  Question: Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second g...
+  Expected: 64.0
+  Predicted: 16.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the prices
+
+- Price of one glass: $5
+- Price of second glass (every second glass): 60% of $5 = $3
+
+Step 2: Determine how many of each type there are
+
+- There are 16 glasses in total
+-...
+
+Example 7:
+  Question: Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How...
+  Expected: 260.0
+  Predicted: 140.0
+  Correct: False
+  Steps: 4
+  Response: Step 1: Identify the information given
+
+- Seattle has 20 sheep
+- Seattle has 4 times as many sheep as Charleston
+- Toulouse has twice as many sheep as Charleston
+
+Step 2: Determine the number of sheep...
+
+Example 8:
+  Question: Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way throug...
+  Expected: 160.0
+  Predicted: 160.0
+  Correct: True
+  Steps: 3
+  Response: Step 1: Determine how long the download takes
+
+- The normal speed is 2 GB per minute
+- There's a 40% delay due to an update
+- There's also a 20-minute delay at the start
+
+Step 2: Calculate the total t...
+
+Example 9:
+  Question: John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot som...
+  Expected: 45.0
+  Predicted: 4.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Determine total distance traveled
+
+- Total distance = distance driven - distance stopped + distance traveling
+- Distance driven = 3 hours * 60 mph = 180 miles
+- Distance stopped = 2 hours * 0 ...
+
+Example 10:
+  Question: Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overti...
+  Expected: 460.0
+  Predicted: 45.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the rates and hours
+
+- Regular rate = $10/hour
+- Overtime rate = 1.2 * $10 = $12/hour
+- Hours worked = 45
+
+Step 2: Calculate the total earnings
+
+- Earnings from regular hours = 40 * $...
+
+Example 11:
+  Question: A new program had 60 downloads in the first month. The number of downloads in the second month was t...
+  Expected: 366.0
+  Predicted: 240.0
+  Correct: False
+  Steps: 2
+  Response: Step 1: Identify the information
+
+- Number of downloads in the first month: 60
+- Number of downloads in the second month: 3 * 60 - 30 = 180
+- Total number of downloads: 60 + 180 = 240
+
+Step 2: Verify ...
+
+Example 12:
+  Question: Toula went to the bakery and bought various types of pastries. She bought 3 dozen donuts which cost ...
+  Expected: 694.0
+  Predicted: 794.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the quantities and prices
+
+- Donuts: 3 dozens at $68 each = 3 * $68 = $204
+- Cupcakes: 2 dozens at $80 each = 2 * $80 = $160
+- Cheesecakes: 6 dozens at $55 each = 6 * $55 = $330
+
+Step...
+
+Example 13:
+  Question: Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, w...
+  Expected: 13.0
+  Predicted: 13.0
+  Correct: True
+  Steps: 4
+  Response: Step 1: Identify the information
+
+- Cost of planting the tree: $90
+- Annual growth rate: 7 lemons per year
+- Price of lemons: $1.5
+- Watering and feeding cost per year: $3
+
+Step 2: Calculate the total...
+
+Example 14:
+  Question: Melanie is a door-to-door saleswoman. She sold a third of her vacuum cleaners at the green house, 2 ...
+  Expected: 18.0
+  Predicted: 15.5
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the information given
+
+- Melanie sold a third of her vacuum cleaners at the green house
+- 2 more were sold at the red house
+- Half were sold at the orange house
+- There are 5 remainin...
+
+Example 15:
+  Question: In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the remaining enrolled i...
+  Expected: 60.0
+  Predicted: 100.0
+  Correct: False
+  Steps: 4
+  Response: Step 1: Identify the total number of students
+
+Total number of students = 20
+
+Step 2: Determine how many students are in each category
+
+- Contemporary dance: 20%
+- Remaining students after subtracting...
+
+Example 16:
+  Question: A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or elec...
+  Expected: 125.0
+  Predicted: 8.0
+  Correct: False
+  Steps: 4
+  Response: Step 1: Identify the costs and revenues
+
+- Cost of jewelry = $5,000
+- Cost of electronics = $8,000
+- Profit potential = (cost of jewelry + cost of electronics) - total revenue
+
+Step 2: Calculate the t...
+
+Example 17:
+  Question: Two trains leave San Rafael at the same time. They begin traveling westward, both traveling for 80 m...
+  Expected: 230.0
+  Predicted: 115.0
+  Correct: False
+  Steps: 5
+  Response: Step 1: Identify the information
+
+- Two trains leave San Rafael at the same time
+- Both trains start traveling westward and cover 80 miles
+- The next day, one train travels northward and covers 150 mi...
+
+Example 18:
+  Question: Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a yea...
+  Expected: 57500.0
+  Predicted: 1150.0
+  Correct: False
+  Steps: 5
+  Response: Step 1: Identify the pay rates
+
+- Hourly rate for teaching: $20
+- Hourly rate for coaching: $30
+
+Step 2: Calculate the total number of hours worked
+
+- Number of hours in a year = 35 + 15 = 50
+
+Step 3:...
+
+Example 19:
+  Question: Claire makes a 3 egg omelet every morning for breakfast.  How many dozens of eggs will she eat in 4 ...
+  Expected: 7.0
+  Predicted: 4.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the information
+
+- Claire makes 3 eggs per meal
+- There are 7 days in a week
+- There are 4 weeks
+
+Step 2: Calculate the total number of meals
+
+- There are 7 days in a week
+- There are...
+
+Example 20:
+  Question: Marissa is hiking a 12-mile trail. She took 1 hour to walk the first 4 miles, then another hour to w...
+  Expected: 6.0
+  Predicted: 4.0
+  Correct: False
+  Steps: 4
+  Response: Step 1: Identify the given information
+
+- Total distance of the trail: 12 miles
+- Time taken to walk the first 4 miles: 1 hour
+- Time taken to walk the next 2 miles: 1 hour
+- Desired average speed: 4 ...
+
+Example 21:
+  Question: I have 10 liters of orange drink that are two-thirds water and I wish to add it to 15 liters of pine...
+  Expected: 15.0
+  Predicted: 15.0
+  Correct: True
+  Steps: 6
+  Response: Step 1: Determine the amount of water in each drink
+
+- Orange drink: 10 liters * (2/3) = 20/3 liters
+- Pineapple drink: 15 liters * (3/5) = 9/5 liters
+
+Step 2: Calculate the total amount of water
+
+- T...
+
+Example 22:
+  Question: Raymond and Samantha are cousins. Raymond was born 6 years before Samantha. Raymond had a son at the...
+  Expected: 14.0
+  Predicted: 8.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the relevant information
+
+- Raymond was born 6 years before Samantha
+- Samantha is currently 31 years old
+- Raymond has a son who is 23 years old
+
+Step 2: Determine the age difference...
+
+Example 23:
+  Question: Billy sells DVDs. He has 8 customers on Tuesday. His first 3 customers buy one DVD each.  His next 2...
+  Expected: 7.0
+  Predicted: 8.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the information given
+
+- Number of customers: 8
+- Number of customers who bought 1 DVD: 3
+- Number of customers who bought 2 DVDs: 2
+- Number of customers who didn't buy anything: 3
+
+...
+
+Example 24:
+  Question: A candle melts by 2 centimeters every hour that it burns. How many centimeters shorter will a candle...
+  Expected: 8.0
+  Predicted: 3.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the time period and rate of melting
+
+- Time period: 3 hours (from 1:00 PM to 5:00 PM)
+- Rate of melting: 2 cm per hour
+
+Step 2: Calculate the total amount melted
+
+- Total melted = rat...
+
+Example 25:
+  Question: Kyle bought last year's best-selling book for $19.50. This is with a 25% discount from the original ...
+  Expected: 26.0
+  Predicted: 24.375
+  Correct: False
+  Steps: 5
+  Response: Step 1: Identify the information given
+
+- The current price of the book: $19.50
+- The discount percentage: 25%
+- We need to find out what the original price was
+
+Step 2: Understand the concept of disc...
+
+Example 26:
+  Question: Marie ordered one chicken meal that costs $12, 5 packs of milk that costs $3 each, 4 apples that cos...
+  Expected: 2.0
+  Predicted: 8.5
+  Correct: False
+  Steps: 4
+  Response: Step 1: Identify the known values
+
+- Cost of chicken meal: $12
+- Number of packs of milk: 5
+- Cost per pack of milk: $3
+- Number of apples: 4
+- Total amount paid: $50
+- Price per box of pizza: $8.50
+
+...
+
+Example 27:
+  Question: Mishka bought 3 pairs of shorts, 3 pairs of pants, and 3 pairs of shoes. One pair of shorts costs $1...
+  Expected: 243.0
+  Predicted: 81.5
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the prices
+
+- Shorts: $16.50
+- Pants: $22.50
+- Shoes: $42
+
+Step 2: Determine the total cost
+
+Add up the individual prices:
+
+Total = Shorts + Pants + Shoes
+Total = $16.50 + $22.50 + $4...
+
+Example 28:
+  Question: Cynthia eats one serving of ice cream every night.  She buys cartons of ice cream with 15 servings o...
+  Expected: 16.0
+  Predicted: 60.0
+  Correct: False
+  Steps: 3
+  Response: Step 1: Identify the information
+
+- Number of servings per carton: 15
+- Cost per carton: $4.00
+- Number of days: 60
+
+Step 2: Calculate the total number of servings
+
+Total servings = number of servings...
+
+Example 29:
+  Question: Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His second stop ...
+  Expected: 25.0
+  Predicted: 40.0
+  Correct: False
+  Steps: 4
+  Response: Step 1: Identify the information given
+
+- Total distance of the trip: 60 miles
+- Distance traveled in the first stop: 20 miles
+- Distance traveled in the second stop: 15 miles
+
+Step 2: Determine the t...
+
+Example 30:
+  Question: Gloria is shoe shopping when she comes across a pair of boots that fit her shoe budget. However, she...
+  Expected: 104.0
+  Predicted: 99.0
+  Correct: False
+  Steps: 4
+  Response: Step 1: Identify the information given
+
+- The total cost of the boots and high heels is $5
+- One pair of heels costs $33
+- The other pair of heels costs twice as much as the first pair, so it costs $6...
+
+
+--- DPO ---
+
+Example 1:
+  Question: Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for ...
+  Expected: 18.0
+  Predicted: 4.0
+  Correct: False
+  Steps: 0
+  Response: Janet has 16 eggs/day from her ducks.
+She eats 3 eggs/day to eat breakfast so that's 3 x 2 = 6 eggs/day from breakfast.
+She bakes 4 muffins/day for her friends so that's 4 x 2 = 8 eggs/day from baking...
+
+Example 2:
+  Question: A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it ...
+  Expected: 3.0
+  Predicted: 3.0
+  Correct: True
+  Steps: 0
+  Response: If a robe takes 2 bolts of blue fiber, it takes half as much white fiber which means it takes 2/2 = 1 bolt of white fiber.
+So in total, it takes 2 + 1 = 3 bolts to make one robe.
+
+Final Answer: 3
+
+Example 3:
+  Question: Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repai...
+  Expected: 70000.0
+  Predicted: 13333.0
+  Correct: False
+  Steps: 0
+  Response: He put in $80,000 + $50,000 = $130,000 in the house.
+The value of the house went up by $130,000 / 1.5 = $93,333.
+So he made a profit of $93,333 - $80,000 = $13,333.
+Final Answer: 13333
+
+Example 4:
+  Question: James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meter...
+  Expected: 540.0
+  Predicted: 540.0
+  Correct: True
+  Steps: 0
+  Response: He runs 3 x 3 = 9 sprints a week.
+So he runs 9 x 60 = 540 meters a week.
+Final Answer: 540
+
+Example 5:
+  Question: Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, meal...
+  Expected: 20.0
+  Predicted: 160.0
+  Correct: False
+  Steps: 0
+  Response: Wendi gives each chicken 3 cups of mixed feed per day for breakfast and lunch, so each chicken gets 3 + 3 = 6 cups of mixed feed per day.
+She has 20 chickens, so she needs 6 x 20 = 120 cups of mixed f...
+
+Example 6:
+  Question: Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second g...
+  Expected: 64.0
+  Predicted: 92.0
+  Correct: False
+  Steps: 0
+  Response: If one pair of glasses costs $5 and every second pair of glasses cost only 60% of that amount, that means they each cost $5 * 60/100 = $3
+So all together, the two pairs of glasses would cost $3 + $3 =...
+
+Example 7:
+  Question: Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How...
+  Expected: 260.0
+  Predicted: 260.0
+  Correct: True
+  Steps: 0
+  Response: If Seattle has 20 sheep, Charleston has 4 * 20 = 80 sheep.
+Toulouse has twice as many sheep as Charleston, meaning they have 2 * 80 = 160 sheep.
+Together, Toulouse, Charleston, and Seattle have 160 + ...
+
+Example 8:
+  Question: Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way throug...
+  Expected: 160.0
+  Predicted: 5.0
+  Correct: False
+  Steps: 0
+  Response: She downloads at a rate of 2 GB/minute for the first 80 minutes because 200 / 10 = 20
+She gets a restart halfway through the download because she's 40% through the file so she needs to restart after 2...
+
+Example 9:
+  Question: John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot som...
+  Expected: 45.0
+  Predicted: 279.0
+  Correct: False
+  Steps: 0
+  Response: He drives for 3 hours at 60 mph for a total of 3 * 60 = 180 miles
+He spends the first 2 hours in standstill traffic so that's still 2 * 60 = 120 miles
+He drives for 2 hours at 30 mph for a total of 2 ...
+
+Example 10:
+  Question: Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overti...
+  Expected: 460.0
+  Predicted: 460.0
+  Correct: True
+  Steps: 0
+  Response: If Eliza works for 40 hours at her regular rate of $10 per hour, she would earn 40*$10=$400
+For the remaining 5 hours she works, she earns 1.2*$10=$12 per hour
+So she would earn 5*$12=$60 from the ove...
+
+Example 11:
+  Question: A new program had 60 downloads in the first month. The number of downloads in the second month was t...
+  Expected: 366.0
+  Predicted: 366.0
+  Correct: True
+  Steps: 0
+  Response: In the second month, there were 60 * 3 = 180 downloads.
+After reducing by 30%, the downloads decreased to 180 - (180 * 30%) = 180 - 54 = 126 downloads.
+Over the three months, there were 60 + 180 + 126...
+
+Example 12:
+  Question: Toula went to the bakery and bought various types of pastries. She bought 3 dozen donuts which cost ...
+  Expected: 694.0
+  Predicted: 694.0
+  Correct: True
+  Steps: 0
+  Response: Toula bought 3 x $68 = $204 worth of donuts.
+She bought 2 x $80 = $160 worth of mini cupcakes.
+She bought 6 x $55 = $330 worth of mini cheesecakes.
+Therefore, the total amount she spent is $204 + $160...
+
+Example 13:
+  Question: Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, w...
+  Expected: 13.0
+  Predicted: 21.0
+  Correct: False
+  Steps: 0
+  Response: He earns $1.5 per lemon he gets so far and he has gotten 7 lemons from the tree so far, that means he has earned 1.5 * 7 = $10 from selling lemons.
+He spends $3 a year watering and feeding the tree an...
+
+Example 14:
+  Question: Melanie is a door-to-door saleswoman. She sold a third of her vacuum cleaners at the green house, 2 ...
+  Expected: 18.0
+  Predicted: 17.5
+  Correct: False
+  Steps: 0
+  Response: Melanie sold 3 x 1 = 3 vacuum cleaners to the green house.
+She sold 3 + 2 = 5 vacuum cleaners to the red house.
+She had 5 + 5 + (5/2) = 10 + 2.5 = 12.5 vacuum cleaners left.
+So she started with 12.5 +...
+
+Example 15:
+  Question: In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the remaining enrolled i...
+  Expected: 60.0
+  Predicted: 22.5
+  Correct: False
+  Steps: 0
+  Response: First find the number of students enrolled in contemporary dance: 20 students / 100 * 20 students = 4 students
+Then find the total number of students not enrolled in contemporary or jazz dance: 20 stu...
+
+Example 16:
+  Question: A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or elec...
+  Expected: 125.0
+  Predicted: 3096.0
+  Correct: False
+  Steps: 0
+  Response: If the jewelry market rises 2.5%, and it originally cost $5,000, the new value of the jewelry would be $5,000 + ($5,000 * 2.5/100) = $5,000 + $125 = $5,125.
+If the electronics market rises 1.2%, and i...
+
+Example 17:
+  Question: Two trains leave San Rafael at the same time. They begin traveling westward, both traveling for 80 m...
+  Expected: 230.0
+  Predicted: 310.0
+  Correct: False
+  Steps: 0
+  Response: On the first day, the first train travels 80 miles west and then 80 more miles north, for a total of 80 + 80 = 160 miles traveled.
+On the second day, the second train travels 150 miles east.
+So, the t...
+
+Example 18:
+  Question: Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a yea...
+  Expected: 57500.0
+  Predicted: 58950.0
+  Correct: False
+  Steps: 0
+  Response: She makes 35 * $20 = $700 as a teacher.
+She makes 15 * $30 = $450 as a cheerleader coach.
+So far, she makes $700 + $450 = $1150 from both jobs.
+She works 50 weeks a year, so her total pay is $1150/wee...
+
+Example 19:
+  Question: Claire makes a 3 egg omelet every morning for breakfast.  How many dozens of eggs will she eat in 4 ...
+  Expected: 7.0
+  Predicted: 7.0
+  Correct: True
+  Steps: 0
+  Response: If Claire makes a 3 egg omelet every morning, then in one week she will make 3 x 7 = 21 eggs.
+In four weeks, she will make 21 x 4 = 84 eggs.
+Since there are 12 eggs in a dozen, Claire will eat 84/12 =...
+
+Example 20:
+  Question: Marissa is hiking a 12-mile trail. She took 1 hour to walk the first 4 miles, then another hour to w...
+  Expected: 6.0
+  Predicted: 4.0
+  Correct: False
+  Steps: 0
+  Response: Marissa has already walked 4 + 2 = 6 miles.
+To find her average speed for the entire hike, we need to divide the total distance by the total time.
+She hiked for a total of 1 + 1 = 2 hours.
+Her average...
+
+Example 21:
+  Question: I have 10 liters of orange drink that are two-thirds water and I wish to add it to 15 liters of pine...
+  Expected: 15.0
+  Predicted: 3.0
+  Correct: False
+  Steps: 0
+  Response: Initially, there are 10 liters * 2/3 = 20/3 liters of water in the orange drink.
+After adding the 10-liter mixture, there are now 10 + 10 = 20 liters of drink total.
+When we spill one liter of orange ...
+
+Example 22:
+  Question: Raymond and Samantha are cousins. Raymond was born 6 years before Samantha. Raymond had a son at the...
+  Expected: 14.0
+  Predicted: 20.0
+  Correct: False
+  Steps: 0
+  Response: If Samantha was 31 when her brother was born, and she was 6 years younger than Raymond when he was born, then Raymond was 31 + 6 = 37 years old.
+Since Raymond was born 6 years before Samantha, they we...
+
+Example 23:
+  Question: Billy sells DVDs. He has 8 customers on Tuesday. His first 3 customers buy one DVD each.  His next 2...
+  Expected: 7.0
+  Predicted: 64.0
+  Correct: False
+  Steps: 0
+  Response: He gets x from the first 3 people so far he has sold x + x + x = 3x DVDs
+He gets 2 * 2 = 4 DVDs from his next 2 people
+So in total he got x + 4 + 4x = 5x DVDs
+We know that he had 8 customers and sold ...
+
+Example 24:
+  Question: A candle melts by 2 centimeters every hour that it burns. How many centimeters shorter will a candle...
+  Expected: 8.0
+  Predicted: 12.0
+  Correct: False
+  Steps: 0
+  Response: From 1:00 PM to 2:00 PM, the candle is melting for 2 hours and is now 16 cm tall.
+From 2:00 PM to 3:00 PM, the candle is melting for another 2 hours and is now 8 cm tall.
+From 3:00 PM to 4:00 PM, the ...
+
+Example 25:
+  Question: Kyle bought last year's best-selling book for $19.50. This is with a 25% discount from the original ...
+  Expected: 26.0
+  Predicted: 1950.0
+  Correct: False
+  Steps: 0
+  Response: If this year’s book cost $19.50 with a 25% discount, that means it cost 100% - 25% = 75% of what it would have cost without the discount.
+So if we divide the current price by 75%, we can find out how ...
+
+Example 26:
+  Question: Marie ordered one chicken meal that costs $12, 5 packs of milk that costs $3 each, 4 apples that cos...
+  Expected: 2.0
+  Predicted: 3.0
+  Correct: False
+  Steps: 1
+  Response: First find the cost of the milk: 5 packs * $3/pack = $15
+Then find the cost of the apples: 4 apples * $1.50/apple = $6
+Now find the total cost of the chicken and milk: $15 + $6 = $21
+Now subtract that...
+
+Example 27:
+  Question: Mishka bought 3 pairs of shorts, 3 pairs of pants, and 3 pairs of shoes. One pair of shorts costs $1...
+  Expected: 243.0
+  Predicted: 159.0
+  Correct: False
+  Steps: 0
+  Response: Mishka bought 3 x $16.50 = $<<3*16.5=49.50>>49.50 worth of shorts.
+She also bought 3 x $22.50 = $<<3*22.5=67.50>>67.50 worth of pants.
+And she spent $42 on her shoes.
+So in total, she spent $49.50 + $...
+
+Example 28:
+  Question: Cynthia eats one serving of ice cream every night.  She buys cartons of ice cream with 15 servings o...
+  Expected: 16.0
+  Predicted: 16.0
+  Correct: True
+  Steps: 0
+  Response: Cynthia gets one serving of ice cream per day, so over 60 days she will get 60 servings of ice cream.
+She buys cartons of ice cream with 15 servings each, so for 60 days she will need 60/15 = 4 carton...
+
+Example 29:
+  Question: Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His second stop ...
+  Expected: 25.0
+  Predicted: 25.0
+  Correct: True
+  Steps: 0
+  Response: After taking his first stop, Henry was 20 miles into his trip.
+His second stop was 15 miles before the end of his trip, so it took him 20 + 15 = 35 miles to get through his second stop.
+He had a total...
+
+Example 30:
+  Question: Gloria is shoe shopping when she comes across a pair of boots that fit her shoe budget. However, she...
+  Expected: 104.0
+  Predicted: 94.0
+  Correct: False
+  Steps: 0
+  Response: If the second pair of heels costs twice as much as the first pair, it costs 2*$33=$66
+Together, the two pairs of heels cost $66+$33=$99
+Since the boots fit her budget, they cost $99
+Since the two pair...
+
