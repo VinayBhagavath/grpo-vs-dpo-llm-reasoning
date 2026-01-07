@@ -216,7 +216,7 @@ if __name__ == "__main__":
     # Load test dataset
     print("Loading GSM8K test set...")
     dataset = load_dataset("openai/gsm8k", "main")
-    test_data = dataset["test"].select(range(5))  # Just 5 examples
+    test_data = dataset["test"].select(range(30))  # 30 questions
     print(f"Using {len(test_data)} test examples")
 
     # Load tokenizer
@@ -282,3 +282,4 @@ if __name__ == "__main__":
 
     # Save results
     save_results(all_results)
+
